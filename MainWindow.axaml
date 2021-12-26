@@ -1,0 +1,150 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450" MinHeight="450" MinWidth="500"
+        x:Class="DayZLinuxGUILauncher.MainWindow"
+        Title="DayZ Linux GUI Launcher"
+        WindowStartupLocation="CenterScreen"
+        >
+
+        <Window.Styles>
+                <Style Selector="TextBox.records">
+                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        <Setter Property="VerticalAlignment" Value="Center" />
+                        <Setter Property="VerticalContentAlignment" Value="Center" />
+                        <Setter Property="BorderThickness" Value="1,1,1,1" />
+                        
+                </Style>
+                
+                <Style Selector="TextBox.Entered">
+                      
+                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                        <Setter Property="Margin" Value="5,9,5,9"/>
+                        <Setter Property="CornerRadius" Value="11" />
+                        
+                </Style>
+                
+                
+                <Style Selector="Button" >
+                        <Setter Property="CornerRadius" Value="6" />
+                        <Setter Property="Margin" Value="2,0,2,0"/>
+                       
+                        <Setter Property="VerticalAlignment" Value="Stretch" />
+                        <Setter Property="VerticalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalAlignment" Value="Stretch" />
+                </Style>
+                <Style Selector="Button.control" >
+                        <Setter Property="CornerRadius" Value="6" />
+                        <Setter Property="Margin" Value="4,8,4,8"/>
+                       
+                        <Setter Property="VerticalAlignment" Value="Stretch" />
+                        <Setter Property="VerticalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalAlignment" Value="Stretch" />
+                </Style>
+                <Style Selector="ToggleSwitch" >
+                       
+                        <Setter Property="Margin" Value="1,0,1,0"/>
+                        <Setter Property="VerticalAlignment" Value="Center" />
+                        <Setter Property="VerticalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+                <Style Selector="ComboBox" >
+                       
+                        <Setter Property="Margin" Value="4,0,4,0"/>
+                        <Setter Property="VerticalAlignment" Value="Center" />
+                        <Setter Property="VerticalContentAlignment" Value="Bottom" />
+                        <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        <Setter Property="HorizontalAlignment" Value="Stretch" />
+                </Style>
+                
+                
+        </Window.Styles>
+        
+        
+        <Grid>
+                
+                <Grid.ColumnDefinitions >
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                     
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="100"/>
+                        
+                </Grid.RowDefinitions>
+                
+                <StackPanel Orientation="Horizontal" >
+                        
+                        
+                        
+                </StackPanel>
+                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Background="gray">
+                        <Grid.ColumnDefinitions >
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        
+                       
+                        <TextBox Classes="Entered" Grid.Column="1" Name="UserNameTextBox" Watermark="UserName"></TextBox>
+                        
+                       
+                </Grid>
+                
+                <ScrollViewer Name="DbRecord"  Grid.Row="1" Grid.ColumnSpan="5" Grid.Column="0" >
+                     
+                        
+                </ScrollViewer>
+                
+                <Grid Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="2" >
+                        <Grid.ColumnDefinitions >
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        
+                      
+
+                        <TextBox Grid.Row="1" Grid.Column="0" 
+                                 Name="ServerNmae"  Watermark="Server Name" 
+                                 Classes="Entered" CornerRadius="6"></TextBox>
+                       
+                        <TextBox Grid.Row="1" Grid.Column="1" 
+                                 Name="ServerIP"  Watermark="Server IP(IP:PORT)" 
+                                 Classes="Entered" CornerRadius="6"></TextBox>
+                        <TextBox Grid.Row="1" Grid.Column="2" 
+                                 Name="Queryport"  Watermark="Queryport" 
+                                 Classes="Entered" CornerRadius="6"></TextBox>
+                        
+                        <Button Grid.Row="1" Grid.Column="3" Click="QueryportButton_OnClick"  Content="Queryport?" Classes="control"></Button>
+
+                        <Button Grid.Row="1" Grid.Column="4" Click="Button_OnClick" Content="+ Add" Classes="control"></Button>
+
+                        
+                        
+                   
+                        
+                </Grid>
+                
+                
+        </Grid>      
+     
+        
+</Window>
