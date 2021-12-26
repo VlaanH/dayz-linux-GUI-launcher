@@ -4,8 +4,28 @@ This program is forked: https: //github.com/bastimeyer/dayz-linux-cli-launcher
 
 Special thanks to bastimeyer (Sebastian Meyer)👉︎👈
 
+You need to install "jq"
 
 
+Arch:
+```sh
+sudo pacman -S jq
+```
+
+Ubuntu:
+```sh
+sudo apt install jq
+```
+## Launch
+
+
+
+
+Open the terminal in the folder with the launcher and enter the command:
+
+```sh
+exec './DayZ LinuxGUILauncher'
+```
 
 ## About
 
