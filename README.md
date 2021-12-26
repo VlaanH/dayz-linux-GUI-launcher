@@ -2,7 +2,7 @@ DayZ Linux GUI Launcher
 ====
 This program is forked: https: //github.com/bastimeyer/dayz-linux-cli-launcher
 
-Special thanks to bastimeyer (Sebastian Meyer)
+Special thanks to bastimeyer (Sebastian Meyer)👉︎👈
 
 
 
