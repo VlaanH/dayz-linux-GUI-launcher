@@ -172,6 +172,7 @@ namespace DayZLinuxGUILauncher.InterfaceObjects
                 
                 if (isActivated==false)
                 {
+                    User.IsEnabled = true;
                     ServerIP.IsEnabled = true;
                     ServerName.IsEnabled = true;
                     queryport.IsEnabled = true;
@@ -192,9 +193,9 @@ namespace DayZLinuxGUILauncher.InterfaceObjects
                         
                     };
                     
-                   
                     databaseManagement.UpdateRecordDb(userData);
                     
+                    User.IsEnabled = false;
                     ServerIP.IsEnabled = false;
                     ServerName.IsEnabled = false;
                     queryport.IsEnabled = false;

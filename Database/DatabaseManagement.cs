@@ -44,7 +44,8 @@ namespace DayZLinuxGUILauncher.Database
                 serverData.queryport = userData.queryport;
                 serverData.ServerName = userData.ServerName;
                 serverData.ServerIP = userData.ServerIP;
-
+                serverData.User = userData.User;
+                
                 appDbContext.SaveChanges();
 
             }
