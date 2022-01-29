@@ -8,8 +8,7 @@
         WindowStartupLocation="CenterOwner"
         Title="mods"
         MinWidth="750"
-        MinHeight="450"
-        >
+        MinHeight="450">
 
         
         <Grid>
@@ -65,7 +64,7 @@
                         Name="configureMods"
                         HorizontalAlignment="Stretch" VerticalAlignment="Bottom"
                         VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
-                        Content="configure mods"
+                        Content="Configure mods"
                         FontSize="20"
                        Click="ConfigureMods_OnClick"
                 ></Button>   
